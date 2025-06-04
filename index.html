@@ -3,105 +3,218 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>Alerta Cheia: Proteção Contra Enchentes</title>
+  <meta name="description" content="Receba alertas de enchentes em tempo real e proteja sua família. Informação, prevenção e segurança para áreas de risco.">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
 
-  <nav>
-    <ul>
-      <li><a href="#problema">Problema</a></li>
-      <li><a href="#tecnologias">Tecnologias</a></li>
-      <li><a href="#objetivos">Objetivos</a></li>
-      <li><a href="#publico-alvo">Público-Alvo</a></li>
-      <li><a href="#beneficios">Benefícios</a></li>
-      <li><a href="#cotidiano">Cotidiano</a></li>
-    </ul>
-  </nav>
+  <header class="main-header">
+    <div class="header-top">
+      <div class="header-content"> <div class="logo">
+          <h1>Alerta Cheia</h1>
+        </div>
+        <button id="menu-toggle" aria-label="Abrir menu de navegação">☰</button>
+        <nav id="main-menu">
+          <ul>
+            <li><a href="#problema">O Problema</a></li>
+            <li><a href="#tecnologias">Tecnologias</a></li>
+            <li><a href="#objetivos">Objetivos</a></li>
+            <li><a href="#publico-alvo">Público-Alvo</a></li>
+            <li><a href="#beneficios">Benefícios</a></li>
+            <li><a href="#cotidiano">No Dia a Dia</a></li>
+            <li><a href="#cadastro">Cadastre-se</a></li>
+            <li><a href="#comunidade">Comunidade</a></li>
+            <li><a href="#quiz">Quiz</a></li>
+          </ul>
+        </nav>
 
-  <section id="problema" class="section">
-    <div class="container">
-      <div class="text-content">
-        <h2>O Problema</h2>
-        <p>Muitas famílias são surpreendidas por enchentes e não conseguem se proteger com segurança em tempo hábil.</p>
-        <p>A rotina impede acesso a notícias e aplicativos com alertas de risco, prejudicando a prevenção e a mobilidade.</p>
+        <div class="theme-switcher">
+          <button class="theme-btn" data-theme="light" aria-label="Mudar para tema claro">☀️ Claro</button>
+          <button class="theme-btn" data-theme="dark" aria-label="Mudar para tema escuro">🌙 Escuro</button>
+          <button class="theme-btn" data-theme="accessible" aria-label="Mudar para tema acessível">🧩 Acessível</button>
+        </div>
+      </div> </div>
+
+    <section class="hero-section">
+      <div class="slideshow-container">
+        <div class="slide fade active">
+          <img src="img/casa-segura.jpg" alt="Mulher em segurança durante enchente">
+          <div class="slide-caption">
+            <h2>Não seja pego de surpresa.</h2>
+            <p>Receba **alertas de enchentes** em tempo real no seu celular.</p>
+          </div>
+        </div>
+        <div class="slide fade">
+          <img src="img/rota.webp" alt="Mapa mostrando rota segura com alertas de alagamento">
+          <div class="slide-caption">
+            <h2>Proteja sua família e seus bens.</h2>
+            <p>Informações precisas para **planejar rotas seguras** e evitar riscos.</p>
+          </div>
+        </div>
+        <div class="slide fade">
+          <img src="img/notificacao2.jpg" alt="Pessoas segurando o celular com notificação de alerta de enchente">
+          <div class="slide-caption">
+            <h2>A informação que salva vidas.</h2>
+            <p>Sua segurança é nossa prioridade: **agilidade e acessibilidade**.</p>
+          </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)" aria-label="Slide anterior">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)" aria-label="Próximo slide">&#10095;</a>
       </div>
-      <div class="image-content">
-        <img src="img/problema.webp" alt="Família enfrentando enchente em área urbana">
+    </section>
+  </header>
+
+  <main>
+    <section id="problema" class="section problem-section">
+      <div class="container">
+        <div class="text-content">
+          <h2>O Problema: Sem Prevenção, Sem Segurança.</h2>
+          <p>Muitas famílias são surpreendidas por enchentes e alagamentos. Elas não conseguem se proteger a tempo, gerando perdas e riscos.</p>
+          <p>A rotina impede acesso a notícias e alertas rápidos. Isso prejudica a prevenção e a segurança em momentos críticos.</p>
+        </div>
+        <div class="image-content">
+          <img src="img/problema.webp" alt="Família em área urbana enfrentando os efeitos de uma enchente.">
+        </div>
       </div>
+    </section>
+
+    <section id="tecnologias" class="section tech-section">
+      <div class="container reverse">
+        <div class="text-content">
+          <h2>Tecnologias: Simplicidade e Eficiência.</h2>
+          <p>Para acessibilidade total em todos os dispositivos. Usaremos ferramentas simples e eficientes no desenvolvimento.</p>
+          <p>A plataforma será construída com HTML5, CSS e JavaScript puro. Sem bibliotecas ou frameworks externos.</p>
+        </div>
+        <div class="tech-icons">
+          <img src="img/html.jpeg" alt="Logo HTML5" title="HTML5">
+          <img src="img/css.jpeg" alt="Logo CSS3" title="CSS3">
+          <img src="img/javascript.jpeg" alt="Logo JavaScript" title="JavaScript">
+        </div>
+      </div>
+    </section>
+
+    <section id="objetivos" class="section objectives-section">
+      <div class="container">
+        <div class="text-content">
+          <h2>Objetivos: Proteger Vidas Pela Antecipação.</h2>
+          <p>Nosso objetivo é proteger vidas pela antecipação. Transformar alertas em ações preventivas efetivas e rápidas.</p>
+          <p>A informação precisa chegar antes da água. Com agilidade, simplicidade e total acessibilidade para todos.</p>
+        </div>
+        <div class="image-content">
+          <img src="img/objetivo.png" alt="Esquema visual mostrando os grupos de pessoas mais afetadas pelas enchentes.">
+        </div>
+      </div>
+    </section>
+
+    <section id="publico-alvo" class="section audience-section">
+      <div class="container reverse">
+        <div class="text-content">
+          <h2>Público-Alvo: Para Quem é Nossa Solução?</h2>
+          <p>A solução Alerta Cheia é para moradores de áreas de risco. Também para usuários de transporte público.</p>
+          <p>Queremos ajudar famílias, motoristas e cidadãos comuns. Evitar transtornos com informações relevantes e oportunas.</p>
+        </div>
+        <div class="image-content">
+          <img src="img/alagamento.jpeg" alt="Ponto de ônibus urbano alagado após forte chuva, com pessoas esperando.">
+        </div>
+      </div>
+    </section>
+
+    <section id="beneficios" class="section benefits-section">
+      <div class="container">
+        <div class="text-content">
+          <h2>Benefícios: Por Que Usar Alerta Cheia?</h2>
+          <p>Receba alertas de enchentes em tempo real no celular. Baseado na sua localização ou CEP cadastrado.</p>
+          <p>Planeje melhor suas rotas, evite riscos. Tome decisões mais seguras para você e sua família.</p>
+        </div>
+        <div class="image-content">
+          <img src="img/notificacao1.jpeg" alt="Celular exibindo notificações de alerta de segurança e previsão de chuvas intensas.">
+        </div>
+      </div>
+    </section>
+
+    <section id="cotidiano" class="section everyday-section">
+      <div class="container reverse">
+        <div class="text-content">
+          <h2>No Dia a Dia: Praticidade e Segurança.</h2>
+          <p>Com seu CEP, enviamos notificações automáticas. Sobre riscos de alagamento próximos, direto no seu celular.</p>
+          <p>Economize tempo, evite prejuízos e aumente sua segurança. Tudo de forma prática, rápida e muito eficiente.</p>
+        </div>
+        <div class="image-content">
+          <img src="img/demonstracao.jpeg" alt="Demonstração visual da plataforma, com uma família recebendo um alerta de enchente no celular.">
+        </div>
+      </div>
+    </section>
+
+    <section id="cadastro" class="section register-section">
+      <div class="container">
+        <div class="text-content">
+          <h2>Junte-se a Nós: Cadastre-se e Proteja-se!</h2>
+          <p>Preencha o formulário para receber alertas personalizados. Faça parte da nossa comunidade de prevenção.</p>
+          <form id="formCadastro" class="form-style">
+            <input type="text" id="nome" placeholder="Seu nome completo" required aria-label="Nome completo">
+            <input type="email" id="email" placeholder="Seu melhor e-mail" required aria-label="E-mail">
+            <input type="password" id="senha" placeholder="Crie uma senha segura" required aria-label="Senha">
+            <input type="text" id="cep" placeholder="Seu CEP (ex: 01234-567)" required aria-label="CEP">
+            <button type="submit" class="cta-button">Cadastrar Agora</button>
+          </form>
+          <p id="alerta-cep" class="alerta-cep" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="comunidade" class="section community-section">
+      <div class="container">
+        <div class="text-content">
+          <h2>Nossa Comunidade: Compartilhe e Ajude.</h2>
+          <p>O Alerta Cheia é um espaço de comunidade. Compartilhe notícias e informações locais no fórum.</p>
+          <p>Ajude outros membros a ficarem mais seguros. Sua contribuição é essencial para todos.</p>
+
+          <h3>Envie uma Notícia Local</h3>
+          <form id="formNoticia" class="form-style">
+            <input type="text" id="titulo-noticia" placeholder="Título da sua notícia" required aria-label="Título da notícia">
+            <textarea id="texto-noticia" rows="4" placeholder="Descreva a situação ou sua experiência..." required aria-label="Texto da notícia"></textarea>
+            <button type="submit" class="cta-button">Publicar Notícia</button>
+          </form>
+
+          <div id="noticias-postadas">
+            <h3>Notícias da Comunidade</h3>
+            <ul id="lista-noticias">
+              </ul>
+          </div>
+
+          <h3>Enquete: Você já sofreu com enchentes?</h3>
+          <form id="formEnquete" class="form-style">
+            <label><input type="radio" name="enquete" value="sim" aria-label="Opção Sim"> Sim</label>
+            <label><input type="radio" name="enquete" value="nao" aria-label="Opção Não"> Não</label>
+            <button type="submit" class="cta-button">Votar</button>
+          </form>
+          <p id="resultado-enquete" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="quiz" class="section quiz-section">
+      <div class="container">
+        <div class="text-content">
+          <h2>Quiz: Você Sabe Agir em Enchentes?</h2>
+          <p>Teste seus conhecimentos sobre como se proteger. Descubra o quão preparado você está para agir.</p>
+          <div id="quiz-container"></div>
+          <button id="quiz-submit" class="cta-button">Finalizar Quiz</button>
+          <p id="quiz-result" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <p>&copy; 2025 Alerta Cheia - João Paulo Fernandes | Desenvolvido para a FIAP - Global Solution</p>
+    <div class="social-links">
+      <a href="#" aria-label="LinkedIn do desenvolvedor">LinkedIn</a>
+      <a href="#" aria-label="GitHub do desenvolvedor">GitHub</a>
     </div>
-  </section>
-
-  <section id="tecnologias" class="section">
-    <div class="container reverse">
-      <div class="text-content">
-        <h2>Quais ferramentas serão utilizadas?</h2>
-        <p>Para garantir acessibilidade em todos os dispositivos, usaremos ferramentas simples e eficientes no desenvolvimento da plataforma.</p>
-        <p>A solução será construída com HTML5, CSS e JavaScript puro, sem bibliotecas ou frameworks externos.</p>
-      </div>
-      <div class="tech-icons">
-        <img src="img/css.jpeg" alt="Logo CSS">
-        <img src="img/html.jpeg" alt="Logo HTML">
-        <img src="img/javascript.jpeg" alt="Logo JavaScript">
-      </div>
-    </div>
-  </section>
-
-  <section id="objetivos" class="section">
-    <div class="container">
-      <div class="text-content">
-        <h2>Qual principal Objetivo?</h2>
-        <p>Nosso objetivo é proteger vidas por meio da antecipação: transformar alertas em ações preventivas efetivas.</p>
-        <p>A informação precisa chegar antes da água, com agilidade, simplicidade e acessibilidade para todos.</p>
-      </div>
-      <div class="image-content">
-        <img src="img/objetivo.png" alt="Esquematização de quem é afetado pelas enchentes">
-      </div>
-    </div>
-  </section>
-
-  <section id="publico-alvo" class="section">
-    <div class="container reverse">
-      <div class="text-content">
-        <h2>Para quem é essa solução?</h2>
-        <p>A solução é voltada para moradores de áreas de risco, usuários de transporte público e regiões urbanas vulneráveis.</p>
-        <p>Queremos ajudar famílias, motoristas e cidadãos comuns a evitar transtornos com informações relevantes e oportunas.</p>
-      </div>
-      <div class="image-content">
-        <img src="img/alagamento.jpeg" alt="Foto de um ponto de ônibus alagado">
-      </div>
-    </div>
-  </section>
-
-  <section id="beneficios" class="section">
-    <div class="container">
-      <div class="text-content">
-        <h2>Por que usar nossa plataforma?</h2>
-        <p>Receba alertas de enchentes e alagamentos em tempo real no celular, com base na sua localização.</p>
-        <p>Planeje melhor suas rotas, evite riscos e tome decisões mais seguras para você e sua família.</p>
-      </div>
-      <div class="image-content">
-        <img src="img/notificacao1.jpeg" alt="Celular recebendo alertas de segurança e notificações de chuvas e enchentes">
-      </div>
-    </div>
-  </section>
-
-  <section id="cotidiano" class="section">
-    <div class="container reverse">
-      <div class="text-content">
-        <h2>Como a plataforma ajuda no dia a dia?</h2>
-        <p>Com seu CEP, enviamos notificações automáticas sobre riscos de alagamento próximos, direto no seu celular.</p>
-        <p>Economize tempo, evite prejuízos e aumente sua segurança de forma prática, rápida e eficiente.</p>
-      </div>
-      <div class="image-content">
-        <img src="img/demonstracao.jpeg" alt="Demonstração da plataforma funcionando: família recebendo notificação de alerta">
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    João Paulo Fernandes - @ FIAP - Global Solution
   </footer>
 
   <script src="js/script.js"></script>
