@@ -5,3 +5,7 @@ Global Solution (GS) - Engenharia de Software - FIAP 2025 - 1ESPV
 
 2 - Nome: Patrick Canuto dos Santos   
     RM: 563776
+
+* Link do Repositório:
+https://github.com/enchentes-Global-Solution/landing-page-gs.git
+
